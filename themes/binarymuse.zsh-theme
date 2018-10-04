@@ -59,7 +59,10 @@ export HOMEBREW_ANALYTICS=1
 # export GOPATH="/Users/mtilley/go"
 # export PATH=$PATH:"/Users/mtilley/go/bin"
 # export PATH=$PATH:/usr/local/opt/go/libexec/bin
-# export PATH=$PATH:/Users/mtilley/src/depot_tools
+export PATH=$PATH:/Users/mtilley/src/depot_tools
+export GIT_CACHE_PATH="${HOME}/.git_cache" # make electron builds faster
+export SCCACHE_BUCKET="electronjs-sccache" # ''
+export SCCACHE_TWO_TIER=true # ''
 # export GOARCH=amd64
 # export GOOS=darwin
 
