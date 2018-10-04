@@ -100,6 +100,13 @@ alias ldp="ll ~/.atom/dev/packages"
 alias lp="ll ~/.atom/packages"
 alias cbranch="git rev-parse --symbolic-full-name --abbrev-ref HEAD"
 
+# electron
+export GN_DIR='/Users/mtilley/github/electron-gn/src'
+alias e='cd $GN_DIR/electron'
+alias ep='cd $GN_DIR && gclient sync --with_branch_heads --with_tags && cd -'
+alias eb='cd $GN_DIR && ninja -C out/Debug electron:electron_app && cd -'
+alias eu='ep && eb'
+
 unsetopt correct_all
 
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
