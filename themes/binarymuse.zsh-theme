@@ -34,7 +34,8 @@ function virtualenv_prompt_info() {
 }
 
 # PROMPT='%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%} %{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}$(virtualenv_prompt_info)$(git_prompt_info) '
-PROMPT='%{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}$(virtualenv_prompt_info)$(git_prompt_info) $ '
+# PROMPT='%{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}$(virtualenv_prompt_info)$(git_prompt_info) $ '
+PROMPT='%{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}$(git_prompt_info) $ '
 
 function iterm2_print_user_vars() {
   iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
@@ -99,13 +100,13 @@ alias cbranch="git rev-parse --symbolic-full-name --abbrev-ref HEAD"
 unsetopt correct_all
 
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
-export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+# export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
 export VIRTUAL_ENV_DISABLE_PROMPT="true"
-export WORKON_HOME=$HOME/.virtualenvs
+# export WORKON_HOME=$HOME/.virtualenvs
 
 export GITHUB_API_TOKEN="a1facc9bdeda9964c4927b44f402e6568e6e0c36"
 
-source /usr/local/bin/virtualenvwrapper.sh
+# source /usr/local/bin/virtualenvwrapper.sh
 eval $(thefuck --alias)
 
 function auto_virtualenv() {
@@ -125,7 +126,7 @@ function chpwd() {
   auto_nvmrc
 }
 
-auto_virtualenv
+# auto_virtualenv
 auto_nvmrc
 
 ulimit -n 1024
