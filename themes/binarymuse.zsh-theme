@@ -10,6 +10,10 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[green]%}!"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[green]%}?"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
+# zplug
+export ZPLUG_HOME=/usr/local/opt/zplug
+source $ZPLUG_HOME/init.zsh
+
 local return_status="%{$fg[red]%}%(?..✘)%{$reset_color%}"
 # RPROMPT='${return_status}%{$reset_color%}'
 
