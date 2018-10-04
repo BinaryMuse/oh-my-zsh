@@ -114,7 +114,7 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
 export VIRTUAL_ENV_DISABLE_PROMPT="true"
 # export WORKON_HOME=$HOME/.virtualenvs
 
-export GITHUB_API_TOKEN="a1facc9bdeda9964c4927b44f402e6568e6e0c36"
+# export GITHUB_API_TOKEN=""
 
 # source /usr/local/bin/virtualenvwrapper.sh
 eval $(thefuck --alias)
