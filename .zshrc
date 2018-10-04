@@ -93,4 +93,4 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
-[[ -f /Users/mtilley/.nvm/versions/node/v8.0.0/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/mtilley/.nvm/versions/node/v8.0.0/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh
+[[ -f /Users/mtilley/.nvm/versions/node/v8.0.0/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/mtilley/.nvm/versions/node/v8.0.0/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
