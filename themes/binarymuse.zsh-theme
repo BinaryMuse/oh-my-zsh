@@ -102,10 +102,18 @@ alias cbranch="git rev-parse --symbolic-full-name --abbrev-ref HEAD"
 
 # electron
 export GN_DIR='/Users/mtilley/github/electron-gn/src'
-alias e='cd $GN_DIR/electron'
+alias ge='cd $GN_DIR/electron'
 alias ep='cd $GN_DIR && gclient sync --with_branch_heads --with_tags && cd -'
 alias eb='cd $GN_DIR && ninja -C out/Debug electron:electron_app && cd -'
 alias eu='ep && eb'
+alias e='/Users/mtilley/github/electron-gn/src/out/Debug/Electron.app/Contents/MacOS/Electron'
+alias ee='eb && e'
+# alias er='ee ~/'
+
+function makerepro() {
+  cp -r "/Users/mtilley/github/repros/template" "/Users/mtilley/github/repros/$1"
+  cd "/Users/mtilley/github/repros/$1"
+}
 
 unsetopt correct_all
 
