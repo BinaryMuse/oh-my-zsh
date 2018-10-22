@@ -107,6 +107,7 @@ alias ep='cd $GN_DIR && gclient sync --with_branch_heads --with_tags && cd -'
 alias eb='cd $GN_DIR && ninja -C out/Debug electron:electron_app && cd -'
 alias eu='ep && eb'
 alias e='/Users/mtilley/github/electron-gn/src/out/Debug/Electron.app/Contents/MacOS/Electron'
+alias er='/Users/mtilley/github/electron-gn/src/out/Release/Electron.app/Contents/MacOS/Electron'
 alias ee='eb && e'
 # alias er='ee ~/'
 
