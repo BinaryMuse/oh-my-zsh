@@ -150,4 +150,4 @@ auto_nvmrc
 
 ulimit -n 1024
 
-fortune
+# fortune
